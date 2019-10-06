@@ -22,11 +22,13 @@ The data format for providing URLs is given below:
 {”URL string pattern against which to check URLs”: [”URL1 to be checked”, "URL2 to be checked”,… ,”URLn to be checked”]}
 
 Example of the data format is given below:
+```python
 {"https://networkx.github.io/documentation/(.+)": ["https://marktwain.github.io/documentation/stable/reference/classes/index.html", "https://networkx.github.io/documentation/unstable.html"]}
 {"https://networkxy.github.io/documentation/(.+)": ["https://tomsawyer.github.io/documentation/stable/reference/classes/index.html", "https://networkxyz.github.io/documentation/unstable.html"]}
-
+```
 Meaning of the above data:
 In the data file provided, there are 4 website names to be tested: two of them against a particular website name format and the other two against another format.
+
 1. https://marktwain.github.io/documentation/stable/reference/classes/index.html  test against 
 https://networkx.github.io/documentation/(.+)
 2.  https://networkx.github.io/documentation/unstable.html   test against 
